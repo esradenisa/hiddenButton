@@ -5,7 +5,7 @@ function generateButtons() {
 
     const container = document.querySelector("div");
     
-    for (var i = 1; i <= num; ++i) {
+    for (let i = 1; i <= num; ++i) {
         var button = document.createElement("button");
         button.textContent = "Buton " + i;
         container.appendChild(button);
