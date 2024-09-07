@@ -1,12 +1,11 @@
 function generateButtons() {
-    
-    let num = parseInt(document.getElementById('numButtons').value, 10);
+    const num = parseInt(document.getElementById('numButtons').value, 10);
 
-    var correctButton = Math.floor(Math.random() * num) + 1;
+    const correctButton = Math.floor(Math.random() * num) + 1;
 
-    var container = document.querySelector("div");
+    const container = document.querySelector("div");
     
-    for (var i = 1; i <= num; i++) {
+    for (var i = 1; i <= num; ++i) {
         var button = document.createElement("button");
         button.textContent = "Buton " + i;
         container.appendChild(button);
